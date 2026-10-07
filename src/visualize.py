@@ -37,6 +37,7 @@ value = [v for k,v in top10]
 # create bar graph
 plt.figure()
 plt.bar(key, value)
-plt.xlabel('Key')
-plt.ylabel('Value')
+plt.xlabel('Language' if 'lang' in args.input_path else 'Country')
+plt.ylabel('Number of tweets')
+plt.tight_layout()
 plt.savefig(args.input_path + '_' + args.key + '.png')
