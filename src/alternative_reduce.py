@@ -38,4 +38,5 @@ for k in args.keys:
 plt.xlabel('Day of year (1-366)')
 plt.ylabel('Number of tweets w/ #')
 plt.legend()
+plt.title('Hashtags by day of year')
 plt.savefig('alternative_reduce.png')
