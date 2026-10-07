@@ -35,7 +35,7 @@ for k in args.keys:
     x = range(1,len(daily[k])+1)
     plt.plot(x,daily[k],label=k)
 
-plt.xlabel('Date')
+plt.xlabel('Day of year (1-366)')
 plt.ylabel('Number of tweets w/ #')
 plt.legend()
 plt.savefig('alternative_reduce.png')
